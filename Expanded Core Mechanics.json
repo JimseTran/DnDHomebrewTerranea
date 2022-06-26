@@ -1,1 +1,49 @@
-
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DndHomebrewTerranea",
+				"abbreviation": "DHT",
+				"full": "Dnd Homebrew Terranea",
+				"authors": [
+					"JimseTran"
+				],
+				"version": "1.0.0",
+				"url": "https://github.com/JimseTran/DnDHomebrewTerranea",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0,
+		"_dateLastModifiedHash": "3d451aeb3e"
+	},
+	"variantrule": [
+        {
+            "name": "Group Checks",
+            "source": "",
+            "page": 0,
+            "ruleType": "O",
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "Trained Checks",
+            "source": "",
+            "page": 0,
+            "ruleType": "O",
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "Working Together",
+            "source": "",
+            "page": 0,
+            "ruleType": "O",
+            "entries": [
+                ""
+            ]
+        }
+	]
+}
