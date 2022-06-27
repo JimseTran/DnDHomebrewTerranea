@@ -42,7 +42,11 @@
             },
             "duration": [
                 {
-                    "type": "instant"
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
                 }
             ],
             "entries": [
@@ -57,6 +61,9 @@
             ],
             "areaTags": [
                 "ST"
+            ],
+            "miscTags": [
+                "SCL"
             ],
             "classes": {
                 "fromClassList": []
@@ -94,7 +101,7 @@
                 "Each wind blade’s damage increases by {@dice 1d4} when you reach 5th Level ({@dice 2d4}), 11th level ({@dice 3d4}) and 17th level ({@dice 4d4})."
             ],
             "damageInflict": [
-                "thunder"
+                "slashing"
             ],
             "spellAttack": [
                 "R"
@@ -102,9 +109,490 @@
             "areaTags": [
                 "ST"
             ],
+            "miscTags": [
+                "SCL"
+            ],
             "classes": {
                 "fromClassList": []
             }
+        },
+        {
+            "name": "Animal Litter",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You create an illusion of a Small or smaller beast you know. It acts like a normal animal, but looks spectral, makes sounds half as loud as normal and passes through creatures without hurting them. ",
+                "At 11th level, you can create a Medium beast or smaller.",
+                "If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature."
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "classes": {
+                "fromClassList": []
+            }
+        },
+        {
+            "name": "Arc Discharge",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "line",
+                "distance": {
+                    "type": "feet",
+                    "amount": 15
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "As an action, you expel an arc of lightning from your hand, shooting it in a direction of your choice. Creatures in a line 15 feet long, 5 foot wide starting from you must succeed in a Dexterity saving throw or take {@damage 1d6} lightning damage.",
+                "This spell’s damage increases by {@dice 1d6} when you reach certain levels: 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "L"
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "classes": {
+                "fromClassList": []
+            }
+        },
+        {
+            "name": "Arctic Arrow",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 600
+                }
+            },
+            "components": {
+                "s": true,
+                "m": {
+                    "text": "a ranged weapon worth at least 1 sp",
+                    "cost": 10
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "As part of the action used to cast this spell, you make a ranged weapon attack against one creature. On a hit, the target suffers the attack’s normal effects, and their speed is reduced by 10 feet until the end of its next turn.",
+                "This spell's damage increases when you reach certain levels. At 5th level, the weapon attack deals an additional {@damage 1d10} cold damage to the target on a hit. This damage increases by {@dice 1d10} at 11th level and 17th level."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "damageInflict": [
+                "cold"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Arctic Arrow",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A bolt of shadow springs from your hand and toward a creature within range, draining vitality where it strikes. Make a ranged spell attack against the target. On a hit, it takes {@damage 1d8} piercing damage. If you score a critical hit, you triple the damage dice instead of doubling them. ",
+                "This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "piercing"
+            ],
+            "spellAttack": [
+                "R"
+            ]
+        },
+        {
+            "name": "Beeline",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 240
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You conjure and hurl a bee-shaped shot with uneering accuracy. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d6} piercing damage. If neither you nor the target is behind cover, you make this spell attack with advantage. ",
+                "This spell's damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "piercing"
+            ],
+            "spellAttack": [
+                "R"
+            ]
+        },
+        {
+            "name": "Bioluminescence",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You radiate light from your body, gaining one of the following features:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You cast bright light in a 30-foot cone and dim light in a 60-foot cone in front of you.",
+                        "You shine bright light in a 20-foot radius around you and dim light for an additional 20 feet. "
+                    ]
+                },
+                "The light can be colored as you like. You can extinguish the light as a bonus action."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "LGT"
+            ]
+        },
+        {
+            "name": "Blob Lob",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You lob a blob of ooze at a target within range. The target must make a Dexterity saving throw. A creature takes {@damage 1d6} acid damage on a failed save, or half as much damage on a successful one.",
+                "This spell's damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "acid"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Blooming Blossom",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You make a seed materialize at a creature within range which then blooms explosively. The bloom deals {@damage 1d4} force damage automatically to the target.",
+                "The spell's damage increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "damageInflict": [
+                "force"
+            ]
+        },
+        {
+            "name": "Brittle Beam",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You shoot a weakening bolt at a creature or object within range. If you target a creature, that creature can make a Constitution saving throw to resist the effects of this spell. On a failure or if the target is an object, the AC of the target is set to 13 if it is higher until the end of your next turn."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "abilityCheck": [
+                "constitution"
+            ]
+        },
+        {
+            "name": "Calling Attack",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a melee weapon worth at least 1 sp",
+                    "cost": 10
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "As part of the action used to cast this spell, you make a melee weapon attack against one creature. On a hit, the target suffers the attack’s normal effects and gets colored with a yellow light until the end of the target's next turn.",
+                "If the target does not move during its turn, it is hit by lightning strike at the end of its turn and takes {@damage 1d8} slashing damage.",
+                "At 5th level, the melee attack deals an extra {@damage 1d8} lightning damage to the target, and the lightning damage dealt by the yellow light increases to {@dice 2d8}. The damage rolls each increase by {@dice 1d8} respectively at 11th level and 17th level."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "slashing"
+            ]
         }
 	]
 }
