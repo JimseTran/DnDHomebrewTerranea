@@ -537,6 +537,9 @@
             "areaTags": [
                 "ST"
             ],
+            "miscTags": [
+                "MAC"
+            ],
             "abilityCheck": [
                 "constitution"
             ]
@@ -592,6 +595,864 @@
             ],
             "damageInflict": [
                 "slashing"
+            ]
+        },
+        {
+            "name": "Calm Mind",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You protect the mind of a target within range that you can see. You grant the target {@dice 1d4} temporary hit points that lasts for the next minute. You can only grant a single creature temporary hit points from this spell at any one time.",
+                "The temporary hit points increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}) and 17th level ({@dice 4d4})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "THP",
+                "SCL"
+            ]
+        },
+        {
+            "name": "Caustic Blast",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You send out a blast of potent acid at an enemy within range. The target must make a Constitution saving throw. On a failed save, the next spell attack that hits the target is automatically a critical hit."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+        {
+            "name": "Cellular Barrier",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You project a barrier that grants yourself {@dice 1d10} temporary hit points. This lasts until the start of your next turn.",
+                "This temporary health gain increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "THP",
+                "SCL"
+            ]
+        },
+        {
+            "name": "Combustion",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Target a creature you can see within range. Make a ranged spell attack. On a hit, the target takes {@damage 1d6} fire damage and lights ablaze with a magical fire, shedding dim light in a 10-foot radius for the next minute or until the target puts itself out as an action. While ablaze, the affected creature or object can't benefit from being Invisible. ",
+                "The damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL",
+                "LGT"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "damageInflict": [
+                "fire"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Corrosion",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "an item made of metal"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "After focusing on a small to medium-sized metal piece you touch for 1 minute, you corrode the metal part you touch, weakening the metal.",
+                "If you corrode a metal item like a door lock or a chain, you have advantage on Strength checks to break the metal.",
+                "If you corrode a lock or a similar instrument, you have advantage on Dexterity (Thieves' Tools) checks to break the lock.",
+                "If you corrode a weapon, the weapon takes a permanent and cumulative -1 penalty to Damage Rolls. If its penalty drops to -5, the weapon is destroyed.",
+                "If you corrode metal armor or a metal shield, it takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a Shield that drops to a +0 bonus is destroyed."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "MAC"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Crystalline Shard",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You create a crystalline shard and throw it at an enemy within range. You make a ranged spell attack at a creature within range. On a hit, the target takes {@damage 1d6} bludgeoning damage and the shard shatters, dealing 1 piercing damage to creatures within 5 feet of the target.",
+                "The cantrip’s main and spread damage increases by {@dice 1d6} and 1 respectively when you reach 5th level ({@dice 2d6}, 2), 11th level ({@dice 3d6}, 3), and 17th level ({@dice 4d6}, 4)."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "damageInflict": [
+                "bludgeoning",
+                "piercing"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ]
+        },
+        {
+            "name": "Diamond Edge",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "As an action, a large sharp edge of diamond erupt from one of your wrists for an instant. Your hand is considered occupied until the spell ends. ",
+                "As a bonus action, you can make a melee spell attack against one creature within 5 feet of you using the diamond edge. On a hit, the target takes {@damage 1d4} slashing damage.",
+                "This spell's damage increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "slashing"
+            ]
+        },
+        {
+            "name": "Dimensional Pocket",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "As you cast this spell, choose one object that you are holding that is no larger than 1 foot on a side and weighs no more than 1 lb. (for example, you may choose a key, an amulet, a few folded pieces of paper, a small wand or dagger). That object disappears into an extradimensional demiplane linked to you.",
+                "Afterward, you may use your bonus action to end this spell to retrieve the item. If the spell ends or you lose concentration on the spell, any object you have stored appears immediately at your feet."
+            ],
+            "classes": {
+                "fromClassList": []
+            }
+        },
+        {
+            "name": "Disturbance",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You extend your hand toward a creature you can touch and cause an disturbance in the material plane to extend from your palm, affecting the minds of the creature you touch. The creature must succeed on a Intelligence saving throw or take {@damage 1d10} psychic damage.",
+                "This spell's damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "miscTags": [
+                "SCL"
+            ]
+        },
+        {
+            "name": "Droplet Bomb",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You conjure a water bomb and throw it at an enemy within range. The target must make a Dexterity saving throw. On a failed save, the target automatically fails the next Dexterity saving throw it must make."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ]
+        },
+        {
+            "name": "Eagle Eye",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "As a bonus action, you intensify your eyes, granting you increased sight. Until the start of your next turn, you can see normally in dim light or though any lightly obscured area. In bright light, you can see twice as far away."
+            ],
+            "classes": {
+                "fromClassList": []
+            }
+        },
+        {
+            "name": "Ebb and Flow",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You send water energy out to slap a target within range. The target must make a Wisdom saving throw. On a failed save, the target takes {@damage 1d6} bludgeoning damage and must make another Wisdom saving throw at the start of its next turn, taking an additional {@damage 1d6} bludgeoning damage on a failed save.",
+                "Both damage instances are increased by {@dice 1d6} respectively when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "damageInflict": [
+                "bludgeoning"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ]
+        },
+        {
+            "name": "Echo Roar",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You send out a blast of echoed sound at an enemy within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 1d6} thunder damage and is {@condition deafened} until the start of your next turn.",
+                "Both damage instances are increased by {@dice 1d6} respectively when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "conditionInflict": [
+                "deafened"
+            ],
+            "damageInflict": [
+                "thunder"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+        {
+            "name": "Echoing Strike",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a melee weapon worth at least 1 sp",
+                    "cost": 10
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, the target is marked for the next minute. If the target is already marked, an arcane echo of your weapon follows your swing, dealing an additional {@damage 1d8} force damage.",
+                "This spell's damage increases when you reach higher levels. At 5th level, the melee attack deals an extra {@damage 1d8} force damage to the target, and the damage the target takes from the echo increases to {@dice 2d8}. Both damage rolls increase by {@dice 1d8} at 11th level and 17th level."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "damageInflict": [
+                "force"
+            ]
+        },
+        {
+            "name": "Erratic Shot",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You create a erratically moving shot of pure chaotic energy and shoot it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} damage. The damage type depends on the number rolled:",
+                {
+                    "type": "table",
+                    "caption": "Erratic Shot",
+                    "colLabels": [
+                        "{@dice d10}",
+                        "Damage Type"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 1
+                                }
+                            },
+                            "Acid"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 2
+                                }
+                            },
+                            "Cold"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 3
+                                }
+                            },
+                            "Fire"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 4
+                                }
+                            },
+                            "Force"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 5
+                                }
+                            },
+                            "Lightning"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 6
+                                }
+                            },
+                            "Poison"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 7
+                                }
+                            },
+                            "Psychic"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 8
+                                }
+                            },
+                            "Thunder"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 9
+                                }
+                            },
+                            "Radiant"
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 10
+                                }
+                            },
+                            "Necrotic"
+                        ]
+                    ]
+                },
+                "This spell's damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}). When rolling more than one damage dice, you can choose either of the dice when determining the damage type of the cantrip."
+            ],
+            "damageInflict": [
+                "acid",
+                "cold",
+                "fire",
+                "force",
+                "lightning",
+                "necrotic",
+                "poison",
+                "psychic",
+                "radiant",
+                "thunder"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "miscTags": [
+                "SCL",
+                "RO"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": []
+            }
+        },
+        {
+            "name": "Extended Arm",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 15
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You transmute your arm and extend it to push or pull an enemy within range. The target must make a Strength saving throw. On a failed save, the target takes {@damage 1d8} bludgeoning damage and is pulled up to 5 feet directly towards you or away from you (your choice).",
+                "This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+            ],
+            "damageInflict": [
+                "bludgeoning"
+            ],
+            "miscTags": [
+                "SCL",
+                "FMV"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "savingThrow": [
+                "strength"
             ]
         }
 	]
