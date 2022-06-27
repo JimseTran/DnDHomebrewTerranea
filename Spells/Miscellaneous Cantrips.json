@@ -1462,7 +1462,7 @@
             "name": "False Mask",
             "source": "DndHomebrewTerranea",
             "level": 0,
-            "school": "I",
+            "school": "P",
             "time": [
                 {
                     "number": 1,
@@ -1608,7 +1608,7 @@
             "name": "Force Lift",
             "source": "DndHomebrewTerranea",
             "level": 0,
-            "school": "T",
+            "school": "P",
             "time": [
                 {
                     "number": 1,
@@ -1632,7 +1632,7 @@
                 }
             ],
             "entries": [
-                "A Medium or smaller creature or object is lifted 10 feet into the air. When dropped as a result of this spell, the first 10 feet fallen is ignored in fall damage calculations.",
+                "A Medium or smaller creature or object is lifted 10 feet into the air by psionic magic. When dropped as a result of this spell, the first 10 feet fallen is ignored in fall damage calculations.",
                 "An unwilling creature can make a Strength save to resist this spell's effects."
             ],
             "classes": {
@@ -1652,7 +1652,7 @@
             "name": "Force Push",
             "source": "DndHomebrewTerranea",
             "level": 0,
-            "school": "T",
+            "school": "P",
             "time": [
                 {
                     "number": 1,
@@ -2070,7 +2070,7 @@
             "name": "Mental Ruin",
             "source": "DndHomebrewTerranea",
             "level": 0,
-            "school": "E",
+            "school": "P",
             "time": [
                 {
                     "number": 1,
@@ -2255,6 +2255,9 @@
             },
             "abilityCheck": [
                 "intelligence"
+            ],
+            "areaTags": [
+                "W"
             ]
         },
         {
@@ -2302,6 +2305,51 @@
             ],
             "miscTags": [
                 "SCL"
+            ]
+        },
+        {
+            "name": "Pine Resin",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You target a surface within range, applying magical plant resin on the surface in a 5-foot radius circle centered on the target. Creatures within 5 feet of that space must succeed in a Dexterity saving throw or have their speed halved until the start of your next turn."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "R"
+            ],
+            "savingThrow": [
+                "dexterity"
             ]
         },
         {
@@ -2357,7 +2405,1002 @@
             ]
         },
         {
-            "name": "Plant Resin",
+            "name": "Power Siphon",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You envelope your hand in corrupting necrotic energy and lash out at a target you can touch. Make a melee spell attack. On a hit, you deal {@damage 1d6} necrotic damage and gain temporary hit points equal to half the damage dealt. These temporary hit points last until the start of your next turn. ",
+                "This spell's damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}) and 17th level ({@dice 4d6})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "damageInflict": [
+                "necrotic"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "THP",
+                "SCL"
+            ]
+        },
+        {
+            "name": "Projectile",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a Tiny object"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You magically fling an object in your possession or an unattended object within 5 feet of you at a target you can see within range. The object must be tiny and no heavier than 1 pound. Make a ranged spell attack against the target. On a hit target takes {@damage 1d10} bludgeoning, piercing or slashing damage, as appropriate to the form of the projectile being used in the attack. The projectile is magically protected against damage to it as a consequence of using it in the spell.",
+                "The spell creates more than one projectile when you reach higher levels: two projectiles at 5th level, three projectiles at 11th level, and four projectiles at 17th level. You can direct the rocks at the same target or at different ones. Make a separate attack roll for each projectile."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "damageInflict": [
+                "bludgeoning",
+                "piercing",
+                "slashing"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Protection Bubble",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Choose one creature within range. Until the start of your next turn, the creature is protected by a magical bubble. If the creature takes damage while the barrier is active, the damage is reduced by {@dice 1d8} and the spell then ends on it.",
+                "At higher levels: You can target one additional creature at 5th (2), 11th (3) and 17th (4) level when you cast the spell."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST",
+                "MT"
+            ]
+        },
+        {
+            "name": "Psionic Platform",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "P",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You create a floating platform within 30 feet of you. It is 1 feet thick and 5 feet wide and long, and is It is only solid ground for creatures that choose to step onto the platform. The platform is almost transparent but has a slight purple translucent tint and can hold up to your body weight at any one time. You can dismiss the platform as a bonus action."
+            ],
+            "classes": {
+                "fromClassList": []
+            }
+        },
+        {
+            "name": "Psyward",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "P",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You place a psionic ward on one willing target within range, which manifests as a purply shimmer surrounding it. The first creature to hit the target with a melee attack before the spell ends takes {@damage 1d8} psychic damage.",
+                "This spell’s damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}) and 17th level ({@dice 4d8})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "damageInflict": [
+                "psychic"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ]
+        },
+        {
+            "name": "Purge",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You target a creature within range and unleash a powerful light blast at it. The target must succeed on a Wisdom saving throw or take {@damage 1d8} radiant damage. If the target has any temporary hit points, it deals an additional {@damage 1d8} radiant damage.",
+                "Both instances of damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ]
+        },
+        {
+            "name": "Purple Jolt",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You send a purple electrical bolt at a creature within range. Make a ranged spell attack against the target. On a hit, you deal {@damage 1d6} lightning damage, and the lightning jumps from the target to another creature within 15 feet of the target. Make a ranged spell attack against the new target, dealing {@damage 1d6} lightning damage on a hit.",
+                "The cantrip’s main and secondary damage increases by {@dice 1d6} respectively when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST",
+                "MT"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "spellAttack": [
+                "R"
+            ]
+        },
+        {
+            "name": "Radiant Spear",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You create a spear of radiant energy and strike a target within range. Make a melee spell attack, dealing {@dice 1d4} piercing and {@damage 1d4} radiant damage on a hit. ",
+                "The piercing and the radiant damage instance each increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}) and 17th level ({@dice 4d4})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "damageInflict": [
+                "piercing",
+                "radiant"
+            ]
+        },
+        {
+            "name": "Reverb",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You create a sound that echoes at a piercing high pitch. Choose one creature or object within range, it must succeed on a Constitution saving throw or take {@damage 1d8} thunder damage. Creatures made out of inorganic material such as stone, crystal, or glass have disadvantage on saving throws against the effects of this spell. ",
+                "This spell’s damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "thunder"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+        {
+            "name": "Revert",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You do one of the following actions:",
+                {
+                    "type": "list",
+                    "items": [
+                        "- You cause up to 100 ft of non-magical rope or string you touch to untangle itself, untying any knots on the material. Works on any string- or cord-like material (subject to DM discretion)",
+                        "- You uncrumple a crumbled piece of paper or fabric to its original flat appearance.",
+                        "- You return a burnt or wet piece of material to its pre-burnt or -wettened state. You cannot restore a completely disintegrated item.",
+                        "- You remove a visible stain or odor from food, drink or dye on any non-living surface you touch."
+                     ]
+                }
+            ],
+            "classes": {
+                "fromClassList": []
+            }
+        },
+        {
+            "name": "Rock Blast",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A conjured rock is shot at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} bludgeoning damage and has disadvantage on any concentration checks made as a result of the damage from this spell.",
+                "This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "damageInflict": [
+                "bludgeoning"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Runic Blast",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "The user channels simple but powerful magic to deal damage. Make a ranged spell attack roll against an enemy within 60 feet. On a hit, you deal {@damage 1d8} force damage. If you have cast Runic Blast on a different target last turn, it deals {@damage 1d12} damage instead.",
+                "This spell's damage increases by {@dice 1d8} and {@dice 1d12} when you reach 5th level ({@dice 2d8}, {@dice 2d12}), 11th level ({@dice 3d8}, {@dice 3d12}), and 17th level ({@dice 4d8}, {@dice 4d12})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "damageInflict": [
+                "force"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Screamer",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You disturb the minds of a creature within range with a short-lived nightmare. The creature must succeed on a Intelligence saving throw or take {@damage 1d6} psychic damage. If the target is {@condition charmed} or {@condition frightened} by you, it makes this saving throw with disadvantage.",
+                "This spell's damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "conditionInflict": [
+                "charmed",
+                "frightened"
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ]
+        },
+        {
+            "name": "Seed Burst",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You target a creature within range, shooting explosive seeds you have conjured at the target. The target must make a Dexterity saving throw. On a failed save, you deal {@damage 1d8} bludgeoning damage. This is increased to {@damage 1d12} damage if the target is currently suffering from at least one condition.",
+                "The spell’s damage increases by one die when you reach 5th level ({@dice 2d8} or {@dice 2d12}), 11th level ({@dice 3d8} or {@dice 3d12}), and 17th level ({@dice 4d8} or {@dice 4d12})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "damageInflict": [
+                "bludgeoning"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ]
+        },
+        {
+            "name": "Shake",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "As an action, you target the floor within range. You make the ground in a 5-foot radius circle of the target shake vigorously, making nearby creatures lose their balance. Creatures in that area must make a Constitution saving throw. On a failed save, the creature falls {@condition prone}."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "R"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+        {
+            "name": "Shape Wood",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You choose a section of wood that you can touch and that fits within a 5-foot cube. You manipulate it in one of the following ways.",
+                {
+                    "type": "list",
+                    "items": [
+                        "- If you target a tree, whether rooted or fallen, you can reshape it to form a new shape that benefit you, such as a place to sit, steps for a makeshift ladder, or form a large open container. The wood you shape cannot be removed from its source of origin, however, nor can it be shaped to form something harmful, such as spears or spikes.",
+                        "- You cause shapes, colors, or both to appear on the wood or bark, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.",
+                        "- If the wood you target is on a tree, whether rooted or fallen, you cause it to become difficult terrain as you reshape the bark and branches to twist in various ways. Alternatively, you can cause a fallen tree or a tangled cluster of trees and branches to become normal terrain if it is already difficult terrain. This change lasts for 1 hour.",
+                        "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+                     ]
+                }
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "PRM"
+            ]
+        },
+        {
+            "name": "Shocker",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You cause a bolt of static electricity to hit a target within range, startling them. The creature must succeed on a Dexterity saving throw or take {@damage 1d8} lightning damage and drop any object they are holding.",
+                "This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "miscTags": [
+                "SCL"
+            ]
+        },
+        {
+            "name": "Snowball Barrage",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A snowball is shot at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} cold damage.",
+                "The spell creates more than one snowball shots when you reach higher levels: two shots at 5th level, three shots at 11th level, and four shots at 17th level. You can direct the shots at the same target or at different ones. Make a separate attack roll for each shot."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "spellAttack": [
+                "R"
+            ]
+        },
+        {
+            "name": "Soak",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You hurl a bubble of water at targets. Choose one creature within range or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take {@damage 1d4} bludgeoning damage and have disadvantage on ability checks until the start of your next turn.",
+                "This spell's damage increases by {@dice 1d4} when you reach 5th Level ({@dice 2d4}), 11th level ({@dice 3d4}) and 17th level ({@dice 4d4})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "damageInflict": [
+                "bludgeoning"
+            ]
+        },
+        {
+            "name": "Solar Ray",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "line",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A solar ray is shot up to 90 feet in a straight line in a direction you choose from you, stopping early if it impacts against a solid surface. If the object would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the ray strikes the creature, dealing {@damage 1d8} radiant damage and stops. On a successful save, the ray passes through the creature and continues.",
+                "This spell's damage increases by {@dice 1d8} when you reach 5th Level ({@dice 2d8}), 11th level ({@dice 3d8}) and 17th level ({@dice 4d8})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "areaTags": [
+                "L"
+            ]
+        },
+        {
+            "name": "Spirit Call",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "You call upon spirits that dwell decomposing in the earth to perform your bidding. These risen visages swirl in a 10-foot radius sphere around a point within range. For the duration, the spirits can manifest one of the following effects in the environment:",
+                
+                {
+                    "type": "list",
+                    "items": [
+                        "- You ask a question and the spirits answer. They do not possess a distinct voice or body, so the depth of their answer is limited by the environment they are called into. They might answer a question by flinging rocks in a particular direction, or scratching out letters on a sign. The spirits lack a specific identity, and are unlikely to know the answer to questions only a certain person might know, but otherwise have a general knowledge of the area and its history.",
+                        "- The spirits snuff out any candles or similar lighting sources in the area.",
+                        "- The spirits become visible only to a specific creature in that radius, and they target their attention on that creature, harassing them as best as their incorporeal nature allows.",
+                        "- The spirits possess an {@condition unconscious} creature, a corpse, or a severed limb. For the duration they crawl in the direction indicated. If inhabiting a creature they are expelled if the creature ends their unconsciousness.",
+                        "- The spirits cause unlocked doors and windows to fly open and shut, and hurl unsecured objects in random directions or cause them to levitate at random heights and intervals."
+                     ]
+                }
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Stalagmite",
             "source": "DndHomebrewTerranea",
             "level": 0,
             "school": "C",
@@ -2383,22 +3426,719 @@
                     "type": "timed",
                     "duration": {
                         "type": "round",
-                        "amount": 1,
-                        "upTo": true
+                        "amount": 1
                     }
                 }
             ],
             "entries": [
-                "You target a surface within range, applying magical plant resin on the surface in a 5-foot radius circle centered on the target. Creatures within 5 feet of that space must succeed in a Dexterity saving throw or have their speed halved until the start of your next turn."
+                "You target a 10-foot square on the ground within range and create tiny rocks in that area. When a creature moves to a spot within the area, you can use your reaction to activate the rocks, transforming them into stalagmites. Creatures in the area must make a Strength saving throw, taking {@damage 1d6} piercing damage on a failed save. At the start of your next turn, the rocks automatically transform into stalagmites, dealing {@damage 1d6} piercing damage to creatures in the area. ",
+                "This spell's damage increases by {@dice 1d6} when you reach 5th Level ({@dice 2d6}), 11th level ({@dice 3d6}) and 17th level ({@dice 4d6})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "damageInflict": [
+                "piercing"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "areaTags": [
+                "Q"
+            ],
+            "miscTags": [
+                "SCL"
+            ]
+        },
+        {
+            "name": "Sticky Glue",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You touch a nonliving object or material and cover any of its surfaces with a magical glue. If the glue touches any other surface on a non-creature, it is now stuck to those surfaces. The glue lasts for 1 hour and can be undone with any solvent or by making a successful Strength check against your Save DC."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "abilityCheck": [
+                "strength"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Strength Sap",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You target a creature within range, sending an essence tether towards it. The target must make a Constitution saving throw. On a failed save, you deal {@damage 1d6} necrotic damage and reduce the target’s Strength score by 2 until the start of your next turn.",
+                "This spell’s damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
             ],
             "classes": {
                 "fromClassList": []
             },
             "areaTags": [
-                "R"
+                "ST"
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SCL"
+            ]
+        },
+        {
+            "name": "Sudden Break",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "cone",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "As an action, you expel a wave of sound out from your hand. Creatures in a 10-foot cone from you must succeed in a Dexterity saving throw or take {@damage 1d6} thunder damage.",
+                "This spell’s damage increases by {@dice 1d6} when you reach certain levels: 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "N"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "thunder"
             ],
             "savingThrow": [
                 "dexterity"
+            ]
+        },
+        {
+            "name": "Swift Leaves",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You touch one willing creature and a magical wind starts to float around them, carrying leaves. Once before the spell ends, the target can use a bonus action to take the Dodge action. The spell then ends."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Symbiosis",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "P",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You connect the minds of two willing creatures within 60 feet of you together. The next time the two targets make an ability check to make the same action, they have advantage on the ability check."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "MT"
+            ]
+        },
+        {
+            "name": "Taunting Blade",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "A melee weapon worth at least 1 sp",
+                    "cost": 10
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "As part of the action used to cast this spell, you make a melee weapon attack against one creature. On a hit, the target suffers the attack’s normal effects and gets colored with a silver light until the start of your next turn.",
+                "If the target deals damage to to a creature other than you while colored with the silver light, it takes {@damage 1d8} slashing damage.",
+                "At 5th level, the melee attack deals an extra {@damage 1d8} slashing damage to the target, and the slashing damage dealt by the silver light increases to {@dice 2d8}. The damage rolls each increase by {@dice 1d8} respectively at 11th level and 17th level."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "damageInflict": [
+                "slashing"
+            ],
+            "miscTags": [
+                "SCL"
+            ]
+        },
+        {
+            "name": "Terrifying Roar",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You roar like a ferocious beast in the wild at a target within range. If the target can hear you (though it need not understand you), it must succeed on a Charisma saving throw or become {@condition frightened} until the end of your next turn. This has no effect on creatures with higher hitpoints than you."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "conditionInflict": [
+                "frightened"
+            ],
+            "savingThrow": [
+                "charisma"
+            ]
+        },
+        {
+            "name": "Third Eye",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "P",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You create a psionic eye in a square within 15 feet of you, even if your view of the square is obstructed.",
+                "As an bonus action, you can gain vision on anything within 5 feet of the eye’s only while you are also within 30 feet of the eye. A creature within 5 feet of the eye can see the eye and make a Wisdom (Perception) check to dispel it."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "abilityCheck": [
+                "wisdom"
+            ]
+        },
+        {
+            "name": "Time Whirl",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You warp time itself, causing ripples to form in time, enveloping a creature you touch. The target must make a Wisdom saving throw. On a failed save, the target takes {@damage 1d4} psychic damage and on its next turn, it can use either an action or a bonus action, not both. This spell's damage increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "damageInflict": [
+                "psychic"
+            ]
+        },
+        {
+            "name": "Toxin Spike",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You shoot toxic spikes at a target within range. The target must make a Constitution saving throw. On a hit, the target takes {@damage 1d6} poison damage and until the start of your next turn, the next weapon attack a creature makes against the target has advantage.",
+                "This spell’s damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "poison"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "savingThrow": [
+                "constitution"
+            ]
+        },
+        {
+            "name": "Vibration Blade",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "A weapon with the thrown property worth at least 1 sp",
+                    "cost": 10
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "As part of the action used to cast this spell, you make a ranged weapon attack using a weapon with the thrown property against one creature. On a hit, the target suffers the attack’s normal effects, and if the weapon is thrown beyond its normal range, it takes additional thunder damage equal to your spellcasting ability modifier.",
+                "At 5th level, the ranged attack deals an extra {@damage 1d8} thunder damage to the target, and the thunder damage dealt by throwing a weapon beyond its normal range increases to {@dice 1d8} + your spellcasting ability modifier. The damage rolls increase by {@dice 1d8} at 11th level ({@dice 3d8}) and 17th level ({@dice 4d8})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "thunder"
+            ],
+            "areaTags": [
+                "ST"
+            ]
+        },
+        {
+            "name": "Vitality Burst",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You restore vitality to creature you touch. You can expend one of your hit dice to grant that creature hit points equivalent to a roll of the hit die. This spell does not effect undead or constructs. ",
+                "The maximum number of hit die you can choose to expend increases by 1 when you reach 5th level (2), 11th level (3), and 17th level (4). You can choose to spend less hit die than the maximum, but the number of dice rolled is always equivalent to the number of hit die expended."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL"
+            ]
+        },
+        {
+            "name": "Wall of Bubbles",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You raise a 10x10x1 ft. wall of bubbles from the ground in an unoccupied space within 30 feet of you. For the duration, perception checks made through the wall that rely on sight, as well as ranged attacks which are made against targets on the opposite side of the wall as the attacker, are made with disadvantage. This spell ends early if an object or creature moves through or into the walls space, or if it is subject to any damage."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "W"
+            ]
+        },
+        {
+            "name": "Wave Excitation",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You excite the inherent energy in space, creating a damaging wave that hits an enemy you can touch.",
+                "Make a melee spell attack against the target. On a hit, the target takes {@damage 1d10} force damage.",
+                "The spell creates more than one wave when you reach higher levels: two waves at 5th level, three waves at 11th level, and four waves at 17th level. You can direct the waves at the same target or at different ones. Make a separate attack roll for each wave."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "damageInflict": [
+                "force"
+            ],
+            "spellAttack": [
+                "M"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ]
+        },
+        {
+            "name": "Weaken",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You send a blast of weakening magic at the target. The target must make a Constitution saving throw. On a failure, the target takes {@damage 1d4} poison damage and has disadvantage on its next Constitution saving throw until the start of your next turn.",
+                "This spell’s damage increases by {@dice 1d4} when you reach certain levels: 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "damageInflict": [
+                "poison"
             ]
         }
 	]
