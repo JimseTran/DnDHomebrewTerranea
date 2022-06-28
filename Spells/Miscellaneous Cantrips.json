@@ -153,12 +153,6 @@
                 "At 11th level, you can create a Medium beast or smaller.",
                 "If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature."
             ],
-            "spellAttack": [
-                "R"
-            ],
-            "areaTags": [
-                "ST"
-            ],
             "abilityCheck": [
                 "intelligence"
             ],
@@ -923,6 +917,9 @@
             "miscTags": [
                 "SCL"
             ],
+            "spellAttack": [
+                "R"
+            ],
             "damageInflict": [
                 "slashing"
             ]
@@ -1233,7 +1230,7 @@
                 }
             ],
             "entries": [
-                "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, the target is marked for the next minute. If the target is already marked, an arcane echo of your weapon follows your swing, dealing an additional {@damage 1d8} force damage.",
+                "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, the target is marked until the end of your next turn. If the target is already marked, you refresh the mark's duration, and an arcane echo of your weapon follows your swing, dealing an additional {@damage 1d8} force damage.",
                 "This spell's damage increases when you reach higher levels. At 5th level, the melee attack deals an extra {@damage 1d8} force damage to the target, and the damage the target takes from the echo increases to {@dice 2d8}. Both damage rolls increase by {@dice 1d8} at 11th level and 17th level."
             ],
             "classes": {
@@ -1552,7 +1549,7 @@
             ]
         },
         {
-            "name": "Flutttering Bullet",
+            "name": "Fluttering Bullet",
             "source": "DndHomebrewTerranea",
             "level": 0,
             "school": "T",
@@ -1884,7 +1881,7 @@
             "time": [
                 {
                     "number": 1,
-                    "unit": "bonus"
+                    "unit": "action"
                 }
             ],
             "range": {
@@ -1903,8 +1900,7 @@
                     "duration": {
                         "type": "round",
                         "amount": 1
-                    },
-                    "concentration": true
+                    }
                 }
             ],
             "entries": [
@@ -2649,7 +2645,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 60
+                    "amount": 30
                 }
             },
             "components": {
@@ -2709,7 +2705,7 @@
                 }
             ],
             "entries": [
-                "You send a purple electrical bolt at a creature within range. Make a ranged spell attack against the target. On a hit, you deal {@damage 1d6} lightning damage, and the lightning jumps from the target to another creature within 15 feet of the target. Make a ranged spell attack against the new target, dealing {@damage 1d6} lightning damage on a hit.",
+                "You send a purple electrical bolt at a creature within range. Make a ranged spell attack against the target. On a hit, you deal {@damage 1d6} lightning damage, and the lightning jumps from the target to another creature within 30 feet of the target. Make a ranged spell attack against the new target, dealing {@damage 1d6} lightning damage on a hit.",
                 "The cantrip’s main and secondary damage increases by {@dice 1d6} respectively when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
             ],
             "classes": {
@@ -3287,7 +3283,8 @@
                 "fromClassList": []
             },
             "areaTags": [
-                "ST"
+                "ST",
+                "MT"
             ],
             "miscTags": [
                 "SCL"
