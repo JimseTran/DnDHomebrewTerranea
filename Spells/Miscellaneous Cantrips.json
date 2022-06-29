@@ -356,6 +356,53 @@
             ]
         },
         {
+            "name": "Beguiling Charm",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You attempt to appeal to one humanoid you can see within range. The target must succeed on a Charisma saving throw or be {@condition charmed} by you until the end of your next turn."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "conditionInflict": [
+                "charmed"
+            ],
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "savingThrow": [
+                "charisma"
+            ]
+        },
+        {
             "name": "Bioluminescence",
             "source": "DndHomebrewTerranea",
             "level": 0,
@@ -401,6 +448,50 @@
             },
             "miscTags": [
                 "LGT"
+            ]
+        },
+        {
+            "name": "Blind Spot",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "P",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You attempt to erase your image from the mind of one creature you can see within range.",
+                "The target must succeed on a Wisdom saving throw, or you are {@condition invisible} to it until the end of your next turn."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "conditionInflict": [
+                "invisible"
             ]
         },
         {
