@@ -1459,7 +1459,7 @@
             "name": "False Mask",
             "source": "DndHomebrewTerranea",
             "level": 0,
-            "school": "P",
+            "school": "I",
             "time": [
                 {
                     "number": 1,
@@ -1487,13 +1487,13 @@
                 }
             ],
             "entries": [
-                "You use your innate psionic powers to do one of the following things:",
+                "You use your innate powers to do one of the following things:",
                 {
                     "type": "list",
                     "items": [
-                        "- See in another direction than the direction your eyes are currently at.",
-                        "- Displace your hearing ability so that you hear from a location within 30 feet of you.",
-                        "- Make a creature within 30 feet feel like they’re being touched by your hand."
+                        "See in another direction than the direction your eyes are currently at.",
+                        "Displace your hearing ability so that you hear from a location within 30 feet of you.",
+                        "Make a creature within 30 feet feel like they’re being touched by your hand."
                     ]
                 }
             ],
@@ -1619,10 +1619,6 @@
                     "amount": 120
                 }
             },
-            "components": {
-                "v": true,
-                "s": true
-            },
             "duration": [
                 {
                     "type": "instant"
@@ -1662,10 +1658,6 @@
                     "type": "feet",
                     "amount": 60
                 }
-            },
-            "components": {
-                "v": true,
-                "s": true
             },
             "duration": [
                 {
@@ -2079,10 +2071,6 @@
                     "type": "feet",
                     "amount": 60
                 }
-            },
-            "components": {
-                "v": true,
-                "s": true
             },
             "duration": [
                 {
@@ -2565,10 +2553,6 @@
                     "amount": 30
                 }
             },
-            "components": {
-                "v": true,
-                "s": true
-            },
             "duration": [
                 {
                     "type": "timed",
@@ -2603,10 +2587,6 @@
                     "type": "feet",
                     "amount": 60
                 }
-            },
-            "components": {
-                "v": true,
-                "s": true
             },
             "duration": [
                 {
@@ -3642,10 +3622,6 @@
                     "amount": 60
                 }
             },
-            "components": {
-                "v": true,
-                "s": true
-            },
             "duration": [
                 {
                     "type": "timed",
@@ -3782,10 +3758,6 @@
                     "type": "feet",
                     "amount": 15
                 }
-            },
-            "components": {
-                "v": true,
-                "s": true
             },
             "duration": [
                 {
