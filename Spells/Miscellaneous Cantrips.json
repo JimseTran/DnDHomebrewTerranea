@@ -19,6 +19,49 @@
 	},
     "spell": [
         {
+            "name": "Acrid Blast",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You shoot an acidic blast at an enemy. The target must make a Dexterity saving throw. On a failed save, the target takes {@damage 1d6} acid damage if the target is more than 60 feet away from you and {@damage 1d10} acid damage otherwise.",
+                "This spell's damage increases by {@dice 1d6} and {@dice 1d10} when you reach 5th level ({@dice 2d6}, {@dice 2d10}), 11th level ({@dice 3d6}, {@dice 3d10}), and 17th level ({@dice 4d6}, {@dice 4d10})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "damageInflict": [
+                "acid"
+            ],
+            "miscTags": [
+                "SCL"
+            ]
+        },
+        {
             "name": "Aftershock",
             "source": "DndHomebrewTerranea",
             "level": 0,
@@ -1635,6 +1678,9 @@
             "areaTags": [
                 "ST"
             ],
+            "conditionInflict": [
+                "prone"
+            ],
             "miscTags": [
                 "SCL"
             ]
@@ -2146,7 +2192,7 @@
             ]
         },
         {
-            "name": "Mental Ruin",
+            "name": "Mental Shackles",
             "source": "DndHomebrewTerranea",
             "level": 0,
             "school": "P",
@@ -2160,7 +2206,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 60
+                    "amount": 120
                 }
             },
             "duration": [
@@ -2173,8 +2219,8 @@
                 }
             ],
             "entries": [
-                "You use your psionic power to attack a target's mind. The target must make a Wisdom saving throw. On a failed save the target takes {@damage 1d4} psychic damage, and the first time it makes a saving throw before the end of your next turn, it must roll a {@dice d4} and subtract the number rolled from the save.",
-                "This spell's damage increases by {@dice 1d4} when you reach 5th Level ({@dice 2d4}), 11th level ({@dice 3d4}) and 17th level ({@dice 4d4})."
+                "You use your psionic power to attempt to lock a target's mind in place. The target must make a Intelligence saving throw. On a failed save, the target takes {@damage 1d4} psychic damage and cannot teleport from their position until the end of their next turn.",
+                "This spell's damage increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
             ],
             "classes": {
                 "fromClassList": []
@@ -2183,13 +2229,13 @@
                 "ST"
             ],
             "savingThrow": [
-                "wisdom"
-            ],
-            "miscTags": [
-                "SCL"
+                "intelligence"
             ],
             "damageInflict": [
                 "psychic"
+            ],
+            "miscTags": [
+                "SCL"
             ]
         },
         {
