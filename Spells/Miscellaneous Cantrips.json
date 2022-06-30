@@ -254,6 +254,53 @@
             }
         },
         {
+            "name": "Arcane Shackles",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You use your powers to attempt to lock a target's mind in place. The target must make a Wisdom saving throw. On a failed save, the target takes {@damage 1d4} psychic damage and cannot teleport from their position until the end of their next turn.",
+                "This spell's damage increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "miscTags": [
+                "SCL"
+            ]
+        },
+        {
             "name": "Arctic Arrow",
             "source": "DndHomebrewTerranea",
             "level": 0,
@@ -712,7 +759,7 @@
             ],
             "entries": [
                 "As part of the action used to cast this spell, you make a melee weapon attack against one creature. On a hit, the target suffers the attack’s normal effects and gets colored with a yellow light until the end of the target's next turn.",
-                "If the target does not move during its turn, it is hit by lightning strike at the end of its turn and takes {@damage 1d8} slashing damage.",
+                "If the target does not move during its turn, it is hit by lightning strike at the end of its turn and takes {@damage 1d8} lightning damage.",
                 "At 5th level, the melee attack deals an extra {@damage 1d8} lightning damage to the target, and the lightning damage dealt by the yellow light increases to {@dice 2d8}. The damage rolls each increase by {@dice 1d8} respectively at 11th level and 17th level."
             ],
             "classes": {
@@ -725,7 +772,7 @@
                 "SCL"
             ],
             "damageInflict": [
-                "slashing"
+                "lightning"
             ]
         },
         {
@@ -1101,7 +1148,7 @@
             "name": "Disturbance",
             "source": "DndHomebrewTerranea",
             "level": 0,
-            "school": "T",
+            "school": "P",
             "time": [
                 {
                     "number": 1,
@@ -2192,53 +2239,6 @@
             ]
         },
         {
-            "name": "Mental Shackles",
-            "source": "DndHomebrewTerranea",
-            "level": 0,
-            "school": "P",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 120
-                }
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "round",
-                        "amount": 1
-                    }
-                }
-            ],
-            "entries": [
-                "You use your psionic power to attempt to lock a target's mind in place. The target must make a Intelligence saving throw. On a failed save, the target takes {@damage 1d4} psychic damage and cannot teleport from their position until the end of their next turn.",
-                "This spell's damage increases by {@dice 1d4} when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
-            ],
-            "classes": {
-                "fromClassList": []
-            },
-            "areaTags": [
-                "ST"
-            ],
-            "savingThrow": [
-                "intelligence"
-            ],
-            "damageInflict": [
-                "psychic"
-            ],
-            "miscTags": [
-                "SCL"
-            ]
-        },
-        {
             "name": "Miasma",
             "source": "DndHomebrewTerranea",
             "level": 0,
@@ -2968,10 +2968,10 @@
                 {
                     "type": "list",
                     "items": [
-                        "- You cause up to 100 ft of non-magical rope or string you touch to untangle itself, untying any knots on the material. Works on any string- or cord-like material (subject to DM discretion)",
-                        "- You uncrumple a crumbled piece of paper or fabric to its original flat appearance.",
-                        "- You return a burnt or wet piece of material to its pre-burnt or -wettened state. You cannot restore a completely disintegrated item.",
-                        "- You remove a visible stain or odor from food, drink or dye on any non-living surface you touch."
+                        "You cause up to 100 ft of non-magical rope or string you touch to untangle itself, untying any knots on the material. Works on any string- or cord-like material (subject to DM discretion)",
+                        "You uncrumple a crumbled piece of paper or fabric to its original flat appearance.",
+                        "You return a burnt or wet piece of material to its pre-burnt or -wettened state. You cannot restore a completely disintegrated item.",
+                        "You remove a visible stain or odor from food, drink or dye on any non-living surface you touch."
                      ]
                 }
             ],
@@ -3007,7 +3007,7 @@
                 }
             ],
             "entries": [
-                "A conjured rock is shot at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} bludgeoning damage and has disadvantage on any concentration checks made as a result of the damage from this spell.",
+                "A conjured rock is shot at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} bludgeoning damage. The target has disadvantage on any concentration checks made as a result of the damage from this spell.",
                 "This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
             ],
             "classes": {
@@ -3088,7 +3088,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 60
+                    "amount": 90
                 }
             },
             "components": {
@@ -3250,12 +3250,12 @@
                 {
                     "type": "list",
                     "items": [
-                        "- If you target a tree, whether rooted or fallen, you can reshape it to form a new shape that benefit you, such as a place to sit, steps for a makeshift ladder, or form a large open container. The wood you shape cannot be removed from its source of origin, however, nor can it be shaped to form something harmful, such as spears or spikes.",
-                        "- You cause shapes, colors, or both to appear on the wood or bark, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.",
-                        "- If the wood you target is on a tree, whether rooted or fallen, you cause it to become difficult terrain as you reshape the bark and branches to twist in various ways. Alternatively, you can cause a fallen tree or a tangled cluster of trees and branches to become normal terrain if it is already difficult terrain. This change lasts for 1 hour.",
-                        "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+                        "If you target a tree, whether rooted or fallen, you can reshape it to form a new shape that benefit you, such as a place to sit, steps for a makeshift ladder, or form a large open container. The wood you shape cannot be removed from its source of origin, however, nor can it be shaped to form something harmful, such as spears or spikes.",
+                        "You cause shapes, colors, or both to appear on the wood or bark, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.",
+                        "If the wood you target is on a tree, whether rooted or fallen, you cause it to become difficult terrain as you reshape the bark and branches to twist in various ways. Alternatively, you can cause a fallen tree or a tangled cluster of trees and branches to become normal terrain if it is already difficult terrain. This change lasts for 1 hour."
                      ]
-                }
+                },
+                "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
             ],
             "classes": {
                 "fromClassList": []
@@ -3498,11 +3498,11 @@
                 {
                     "type": "list",
                     "items": [
-                        "- You ask a question and the spirits answer. They do not possess a distinct voice or body, so the depth of their answer is limited by the environment they are called into. They might answer a question by flinging rocks in a particular direction, or scratching out letters on a sign. The spirits lack a specific identity, and are unlikely to know the answer to questions only a certain person might know, but otherwise have a general knowledge of the area and its history.",
-                        "- The spirits snuff out any candles or similar lighting sources in the area.",
-                        "- The spirits become visible only to a specific creature in that radius, and they target their attention on that creature, harassing them as best as their incorporeal nature allows.",
-                        "- The spirits possess an {@condition unconscious} creature, a corpse, or a severed limb. For the duration they crawl in the direction indicated. If inhabiting a creature they are expelled if the creature ends their unconsciousness.",
-                        "- The spirits cause unlocked doors and windows to fly open and shut, and hurl unsecured objects in random directions or cause them to levitate at random heights and intervals."
+                        "You ask a question and the spirits answer. They do not possess a distinct voice or body, so the depth of their answer is limited by the environment they are called into. They might answer a question by flinging rocks in a particular direction, or scratching out letters on a sign. The spirits lack a specific identity, and are unlikely to know the answer to questions only a certain person might know, but otherwise have a general knowledge of the area and its history.",
+                        "The spirits snuff out any candles or similar lighting sources in the area.",
+                        "The spirits become visible only to a specific creature in that radius, and they target their attention on that creature, harassing them as best as their incorporeal nature allows.",
+                        "The spirits possess an {@condition unconscious} creature, a corpse, or a severed limb. For the duration they crawl in the direction indicated. If inhabiting a creature they are expelled if the creature ends their unconsciousness.",
+                        "The spirits cause unlocked doors and windows to fly open and shut, and hurl unsecured objects in random directions or cause them to levitate at random heights and intervals."
                      ]
                 }
             ],
@@ -4030,7 +4030,7 @@
                 }
             ],
             "range": {
-                "type": "point",
+                "type": "radius",
                 "distance": {
                     "type": "feet",
                     "amount": 120
