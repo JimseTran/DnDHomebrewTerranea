@@ -237,8 +237,8 @@
                 "As an action, you expel an arc of lightning from your hand, shooting it in a direction of your choice. Creatures in a line 15 feet long, 5 foot wide starting from you must succeed in a Dexterity saving throw or take {@damage 1d6} lightning damage.",
                 "This spell’s damage increases by {@dice 1d6} when you reach certain levels: 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
             ],
-            "spellAttack": [
-                "R"
+            "savingThrow": [
+                "dexterity"
             ],
             "areaTags": [
                 "L"
@@ -4050,8 +4050,8 @@
                 }
             ],
             "entries": [
-                "As part of the action used to cast this spell, you make a ranged weapon attack using a weapon with the thrown property against one creature. On a hit, the target suffers the attack’s normal effects, and if the weapon is thrown beyond its normal range, it takes additional thunder damage equal to your spellcasting ability modifier.",
-                "At 5th level, the ranged attack deals an extra {@damage 1d8} thunder damage to the target, and the thunder damage dealt by throwing a weapon beyond its normal range increases to {@dice 1d8} + your spellcasting ability modifier. The damage rolls increase by {@dice 1d8} at 11th level ({@dice 3d8}) and 17th level ({@dice 4d8})."
+                "As part of the action used to cast this spell, you make a ranged weapon attack using a weapon with the thrown property against one creature. On a hit, the target suffers the attack’s normal effects, and if the weapon is thrown beyond its normal range, it takes additional psychic damage equal to your spellcasting ability modifier.",
+                "At 5th level, the ranged attack deals an extra {@damage 1d8} psychic damage to the target, and the psychic damage dealt by throwing a weapon beyond its normal range increases to {@dice 1d8} + your spellcasting ability modifier. The damage rolls increase by {@dice 1d8} at 11th level ({@dice 3d8}) and 17th level ({@dice 4d8})."
             ],
             "classes": {
                 "fromClassList": []
@@ -4060,7 +4060,7 @@
                 "SCL"
             ],
             "damageInflict": [
-                "thunder"
+                "psychic"
             ],
             "areaTags": [
                 "ST"
