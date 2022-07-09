@@ -352,53 +352,6 @@
             ]
         },
         {
-            "name": "Arctic Arrow",
-            "source": "DndHomebrewTerranea",
-            "level": 0,
-            "school": "V",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 120
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "A bolt of shadow springs from your hand and toward a creature within range, draining vitality where it strikes. Make a ranged spell attack against the target. On a hit, it takes {@damage 1d8} piercing damage. If you score a critical hit, you triple the damage dice instead of doubling them. ",
-                "This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
-            ],
-            "classes": {
-                "fromClassList": []
-            },
-            "areaTags": [
-                "ST"
-            ],
-            "miscTags": [
-                "SCL"
-            ],
-            "damageInflict": [
-                "piercing"
-            ],
-            "spellAttack": [
-                "R"
-            ]
-        },
-        {
             "name": "Beeline",
             "source": "DndHomebrewTerranea",
             "level": 0,
@@ -1730,6 +1683,53 @@
             ],
             "miscTags": [
                 "SCL"
+            ]
+        },
+        {
+            "name": "Fleeting Lance",
+            "source": "DndHomebrewTerranea",
+            "level": 0,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You conjure a ethereal lance and quickly attack a nearby enemy before it disappears. Make a melee spell attack against the target. On a hit, it takes {@damage 1d10} piercing damage. If you score a critical hit, you triple the damage dice instead of doubling them. ",
+                "This spell's damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10})."
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "damageInflict": [
+                "piercing"
+            ],
+            "spellAttack": [
+                "R"
             ]
         },
         {
