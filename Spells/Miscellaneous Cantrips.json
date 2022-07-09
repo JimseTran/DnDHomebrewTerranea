@@ -1364,8 +1364,8 @@
                 }
             ],
             "entries": [
-                "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, the target is marked until the end of your next turn. If the target is already marked, you refresh the mark's duration, and an arcane echo of your weapon follows your swing, dealing an additional {@damage 1d8} force damage.",
-                "This spell's damage increases when you reach higher levels. At 5th level, the melee attack deals an extra {@damage 1d8} force damage to the target, and the damage the target takes from the echo increases to {@dice 2d8}. Both damage rolls increase by {@dice 1d8} at 11th level and 17th level."
+                "As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, the target is marked until the end of your next turn. If the target is already marked, you refresh the mark's duration, and an arcane echo of your weapon follows your swing, dealing additional force damage equal to your spellcasting ability modifier.",
+                "This spell's damage increases when you reach higher levels. At 5th level, the melee attack deals an extra {@damage 1d8} force damage to the target, and the damage the target takes from the echo increases to {@dice 1d8} equal to your spellcasting ability modifier. Both damage rolls increase by {@dice 1d8} at 11th level and 17th level."
             ],
             "classes": {
                 "fromClassList": []
@@ -1769,8 +1769,8 @@
             ],
             "entries": [
                 "As part of the action used to cast this spell, you make a ranged weapon attack against one creature. On a hit, the target suffers the attack’s normal effects and gets colored with a pink light until the end of its next turn.",
-                "If the target deals damage to you while colored with the pink light, it takes additional piercing damage equal to your spellcasting ability modifier.",
-                "At 5th level, the ranged attack deals an extra {@damage 1d6} piercing damage to the target, and the piercing damage dealt by the pink light increases to {@dice 1d6} + your spellcasting ability modifier. The damage rolls increase by {@dice 1d6} at 11th level and 17th level."
+                "If the target deals damage to you while colored with the pink light, it takes {@dice 1d6} piercing damage, and the spell ends.",
+                "At 5th level, the ranged attack deals an extra {@damage 1d6} piercing damage to the target, and the piercing damage dealt by the pink light increases to {@dice 2d6}. The damage rolls increase by an additional {@dice 1d6} at 11th level and 17th level."
             ],
             "classes": {
                 "fromClassList": []
